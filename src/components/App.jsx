@@ -1,3 +1,9 @@
+/* import Interface from "./Interface/Interface"; */
+import React from "react";
+
+import Interface from "./Interface/Interface";
+
+
 export const App = () => {
   return (
     <div
@@ -10,7 +16,19 @@ export const App = () => {
         color: '#010101'
       }}
     >
-      React homework template
+     {/*  <Section title="Please leave feedback">
+     <Statistics good={} neutral={} bad={} total={} positivePercentage={} />
+       
+      </Section>
+      <Section title="Statistics">
+        <FeedbackOptions />
+          </Section> */}
+
+      
+          <Interface />
+   
     </div>
   );
 };
+
+
