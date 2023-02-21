@@ -1,7 +1,6 @@
-/* import Interface from "./Interface/Interface"; */
-import React from "react";
 
-import Interface from "./Interface/Interface";
+import React from "react";
+import Interface from "./Interface";
 
 
 export const App = () => {
