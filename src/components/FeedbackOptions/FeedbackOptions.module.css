@@ -1,8 +1,16 @@
 .btn {
-width: 40px;
+width: 150px;
+height: 40px;
+font-size: 30px;
 
 }
 
-.active {
+.btn:not(:last-child) {
+    margin-right: 20px;
+}
+
+.btn:hover {
 scale: 1.1;
+background-color: aqua;
 }
+

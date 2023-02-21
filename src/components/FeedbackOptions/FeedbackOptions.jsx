@@ -1,12 +1,14 @@
+import PropTypes from 'prop-types';
 import css from './FeedbackOptions.module.css'
+
 
 const FeedbackOptions = ({ options, onLeaveFeedback }, index) => {
     return Object.keys(options).map(btnName => {
-      /*   const massiveClass = ['btn'] */
+    
          return (
-             <button key={btnName}
+             <button className={css.btn} key={btnName}
                  type='button'
-              /*  className={massiveClass.join(' ')} */  
+           
                  onClick={() => onLeaveFeedback(btnName) }>{btnName}</button>
                     
     )
@@ -14,3 +16,9 @@ const FeedbackOptions = ({ options, onLeaveFeedback }, index) => {
    
 } 
 export default FeedbackOptions
+
+FeedbackOptions.propTypes = {
+     options: PropTypes.object.isRequired,
+    onLeaveFeedback: PropTypes.func.isRequired,
+}
+
